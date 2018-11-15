@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE ncx PUBLIC '-//NISO//DTD ncx 2005-1//EN' 'http://www.daisy.org/z3986/2005/ncx-2005-1.dtd'>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="http://www.gutenberg.org/ebooks/8492"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:generator" content="Ebookmaker 0.4.0a5 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>The King in Yellow</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="np-1" playOrder="1">
+      <navLabel>
+        <text>THE KING IN YELLOW</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-0.htm.html#pgepubid00000"/>
+    </navPoint>
+    <navPoint id="np-2" playOrder="2">
+      <navLabel>
+        <text>THE REPAIRER OF REPUTATIONS</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-0.htm.html#pgepubid00001"/>
+      <navPoint id="np-3" playOrder="3">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-0.htm.html#pgepubid00002"/>
+      </navPoint>
+      <navPoint id="np-4" playOrder="4">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-0.htm.html#pgepubid00003"/>
+      </navPoint>
+      <navPoint id="np-5" playOrder="5">
+        <navLabel>
+          <text>III</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-0.htm.html#pgepubid00004"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-6" playOrder="6">
+      <navLabel>
+        <text>THE MASK</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00005"/>
+      <navPoint id="np-7" playOrder="7">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00006"/>
+      </navPoint>
+      <navPoint id="np-8" playOrder="8">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00007"/>
+      </navPoint>
+      <navPoint id="np-9" playOrder="9">
+        <navLabel>
+          <text>III</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00008"/>
+      </navPoint>
+      <navPoint id="np-10" playOrder="10">
+        <navLabel>
+          <text>IV</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00009"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-11" playOrder="11">
+      <navLabel>
+        <text>IN THE COURT OF THE DRAGON</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00010"/>
+    </navPoint>
+    <navPoint id="np-12" playOrder="12">
+      <navLabel>
+        <text>THE YELLOW SIGN</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00011"/>
+      <navPoint id="np-13" playOrder="13">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-1.htm.html#pgepubid00012"/>
+      </navPoint>
+      <navPoint id="np-14" playOrder="14">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-2.htm.html#pgepubid00013"/>
+      </navPoint>
+      <navPoint id="np-15" playOrder="15">
+        <navLabel>
+          <text>III</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-2.htm.html#pgepubid00014"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-16" playOrder="16">
+      <navLabel>
+        <text>THE DEMOISELLE D'YS</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-2.htm.html#pgepubid00015"/>
+      <navPoint id="np-17" playOrder="17">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-2.htm.html#pgepubid00016"/>
+      </navPoint>
+      <navPoint id="np-18" playOrder="18">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-2.htm.html#pgepubid00017"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-19" playOrder="19">
+      <navLabel>
+        <text>THE PROPHETS' PARADISE</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00018"/>
+      <navPoint id="np-20" playOrder="20">
+        <navLabel>
+          <text>THE STUDIO</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00019"/>
+      </navPoint>
+      <navPoint id="np-21" playOrder="21">
+        <navLabel>
+          <text>THE PHANTOM</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00020"/>
+      </navPoint>
+      <navPoint id="np-22" playOrder="22">
+        <navLabel>
+          <text>THE SACRIFICE</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00021"/>
+      </navPoint>
+      <navPoint id="np-23" playOrder="23">
+        <navLabel>
+          <text>DESTINY</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00022"/>
+      </navPoint>
+      <navPoint id="np-24" playOrder="24">
+        <navLabel>
+          <text>THE THRONG</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00023"/>
+      </navPoint>
+      <navPoint id="np-25" playOrder="25">
+        <navLabel>
+          <text>THE JESTER</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00024"/>
+      </navPoint>
+      <navPoint id="np-26" playOrder="26">
+        <navLabel>
+          <text>THE GREEN ROOM</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00025"/>
+      </navPoint>
+      <navPoint id="np-27" playOrder="27">
+        <navLabel>
+          <text>THE LOVE TEST</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00026"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-28" playOrder="28">
+      <navLabel>
+        <text>THE STREET OF THE FOUR WINDS</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00027"/>
+      <navPoint id="np-29" playOrder="29">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00028"/>
+      </navPoint>
+      <navPoint id="np-30" playOrder="30">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00029"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-31" playOrder="31">
+      <navLabel>
+        <text>THE STREET OF THE FIRST SHELL</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00030"/>
+      <navPoint id="np-32" playOrder="32">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-3.htm.html#pgepubid00031"/>
+      </navPoint>
+      <navPoint id="np-33" playOrder="33">
+        <navLabel>
+          <text>III</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00032"/>
+      </navPoint>
+      <navPoint id="np-34" playOrder="34">
+        <navLabel>
+          <text>IV</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00033"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-35" playOrder="35">
+      <navLabel>
+        <text>THE STREET OF OUR LADY OF THE FIELDS</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00034"/>
+      <navPoint id="np-36" playOrder="36">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00035"/>
+      </navPoint>
+      <navPoint id="np-37" playOrder="37">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00036"/>
+      </navPoint>
+      <navPoint id="np-38" playOrder="38">
+        <navLabel>
+          <text>III</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00037"/>
+      </navPoint>
+      <navPoint id="np-39" playOrder="39">
+        <navLabel>
+          <text>IV</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-4.htm.html#pgepubid00038"/>
+      </navPoint>
+      <navPoint id="np-40" playOrder="40">
+        <navLabel>
+          <text>V</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-5.htm.html#pgepubid00039"/>
+      </navPoint>
+      <navPoint id="np-41" playOrder="41">
+        <navLabel>
+          <text>VI</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-5.htm.html#pgepubid00040"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="np-42" playOrder="42">
+      <navLabel>
+        <text>RUE BARRÉE</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-5.htm.html#pgepubid00041"/>
+      <navPoint id="np-43" playOrder="43">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-5.htm.html#pgepubid00042"/>
+      </navPoint>
+      <navPoint id="np-44" playOrder="44">
+        <navLabel>
+          <text>II</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-5.htm.html#pgepubid00043"/>
+      </navPoint>
+      <navPoint id="np-45" playOrder="45">
+        <navLabel>
+          <text>III</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-5.htm.html#pgepubid00044"/>
+      </navPoint>
+      <navPoint id="np-46" playOrder="46">
+        <navLabel>
+          <text>IV</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-6.htm.html#pgepubid00045"/>
+      </navPoint>
+      <navPoint id="np-47" playOrder="47">
+        <navLabel>
+          <text>V</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@8492@8492-h@8492-h-6.htm.html#pgepubid00046"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
+
+</root>
