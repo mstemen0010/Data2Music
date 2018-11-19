@@ -102,7 +102,7 @@ public class PageStack implements Map<Integer, ParaStack> {
         words = list.toArray(new String[0]);
         Map<String, Long> counts;
         counts = list.stream().collect(groupingBy(Function.identity(), counting()));
-        System.out.println(counts);
+        // System.out.println(counts);
         
     }
     

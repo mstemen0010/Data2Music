@@ -5,12 +5,9 @@
  */
 package wms.EPubToMusic;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Scanner;
 import java.util.Set;
 import java.util.Stack;
 import java.util.TreeMap;
@@ -19,7 +16,6 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import static org.jsoup.nodes.Document.OutputSettings.Syntax.html;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
@@ -34,6 +30,9 @@ public class ParaStack {
     private final Stack<String> paraStack = new Stack<>();
     private final Set<String> wordSet = new HashSet<>();
     private final TreeMap<String, Integer> wordsByCount = new TreeMap<>();
+    private final Stack<String> targetStack = new Stack<>();
+    
+    private int targetValue = 10; // good values: 5,7,9, 10
 
     public ParaStack(String stringToParse) {
         build(stringToParse);
@@ -46,9 +45,17 @@ public class ParaStack {
         Elements p = doc.getElementsByTag("p");
 
         for (Element x : p) {
+            // System.out.println(x.text());
             paraStack.push(x.text());
             updateWordStack(x.text());
         }
+         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+         System.out.println("**************************************************************************************************************************");
+         
+         // System.out.println(wordsByCount);
+         System.out.println(this.targetStack);
+         System.out.println("**************************************************************************************************************************");
+         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
     
     public String getWords() {
@@ -63,11 +70,18 @@ public class ParaStack {
                 wordsByCount.put(s, new Integer(1));
             }
             else { 
-                int c = wordsByCount.get(s).intValue();
-                wordsByCount.put( s, ++c);
+                int c = wordsByCount.get(s).intValue() + 1;
+                wordsByCount.put( s, c);
+                if( c == targetValue) {
+                    String t = s + "=" + String.valueOf(c);
+                    this.targetStack.add(t);
+                }
             }
         }
-        System.out.println(wordsByCount);
+    }
+    
+    public Iterator<String> getTargetStack() {
+        return this.targetStack.iterator();
     }
     
     public Iterator<String> getWordList() {
