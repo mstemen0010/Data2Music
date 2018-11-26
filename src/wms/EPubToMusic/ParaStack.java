@@ -32,7 +32,7 @@ public class ParaStack {
     private final TreeMap<String, Integer> wordsByCount = new TreeMap<>();
     private final Stack<String> targetStack = new Stack<>();
     
-    private int targetValue = 25; // good values: 5,7,9, 10
+    private int targetValue = 10; // good values: 5,7,9, 10
 
     public ParaStack(String stringToParse) {
         build(stringToParse);
@@ -43,7 +43,9 @@ public class ParaStack {
         // Element content = doc.getElementById("someid");
         Document doc = Jsoup.parse(strToUse);
         Elements p = doc.getElementsByTag("p");
-
+        System.out.println("Common words stack size is: " +  CommonWords.getCommonWordsSize());
+                
+        System.out.println("Target value is: " + targetValue );
         for (Element x : p) {
             // System.out.println(x.text());
             paraStack.push(x.text());
@@ -51,9 +53,21 @@ public class ParaStack {
         }
          System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
          System.out.println("**************************************************************************************************************************");
-         
-         // System.out.println(wordsByCount);
-         System.out.println(this.targetStack);
+         System.out.println("##########################################################################################################################");
+         System.out.println("##########################################################################################################################");
+         System.out.println("Common Words are: " + CommonWords.showCommonWords());
+         System.out.println("##########################################################################################################################");
+         System.out.println("##########################################################################################################################");
+// System.out.println(wordsByCount); 
+         System.out.println("Resulting set is: " + this.targetStack);
+         Stack<String> cutDownList = this.candidateStackFromTargetStack();
+         System.out.println("Candidate stack is: " + cutDownList);
+         int u = CommonWords.compareToStack(cutDownList);
+         int d = targetStack.size();
+         System.out.println("Trimed down candidate list is: " + CommonWords.getDiffStack(cutDownList)); 
+         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+         System.out.println("Size diff is: " + (d - u) );
          System.out.println("**************************************************************************************************************************");
          System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
@@ -99,6 +113,16 @@ public class ParaStack {
         return Stream.of(str.split(" "))
             .map(elem -> new String(elem))
             .collect(Collectors.toList());
+    }
+    
+    private Stack<String> candidateStackFromTargetStack() {
+        Stack<String> candStack = new Stack<>();
+        for (String s: targetStack) {            
+            String cs = s.split("=")[0];            
+            candStack.add(cs.replaceAll("\"", ""));
+        }
+        
+        return candStack;
     }
     
    
