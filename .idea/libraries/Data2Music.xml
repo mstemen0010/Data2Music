@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Data2Music">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Data2Music.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

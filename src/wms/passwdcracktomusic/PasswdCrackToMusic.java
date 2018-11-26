@@ -352,7 +352,7 @@ public class PasswdCrackToMusic {
         System.out.println("Musical Phrase contains: " + myPhrase.size() + " notes");
         MidiFile newMidiFile = new MidiFile();
         Iterator<Note> notes = myPhrase.iterator();
-        boolean salt = false; // used to mix up a repeating seqence of notes
+        boolean salt = false; // used to mix up a repeating sequence of notes
         Note lastNoteSeen = null;
         while( notes.hasNext() )
         {
