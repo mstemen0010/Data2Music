@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d88b40f6-ea93-47c6-9d29-f8a6d06482bf" name="Default Changelist" comment="changing data structures for freq word counts">
+    <list default="true" id="d88b40f6-ea93-47c6-9d29-f8a6d06482bf" name="Default Changelist" comment="fleshed out map class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/WordOccurMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/WordOccurMatrix.java" afterDir="false" />
     </list>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685636593713</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fleshed out map class">
+      <created>1685643462096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685643462096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -214,7 +221,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changing data structures for freq word counts" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing data structures for freq word counts" />
+    <MESSAGE value="fleshed out map class" />
+    <option name="LAST_COMMIT_MESSAGE" value="fleshed out map class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
