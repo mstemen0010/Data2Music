@@ -5,103 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d88b40f6-ea93-47c6-9d29-f8a6d06482bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_kxml_kxml2_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nl_siegmann_epublib_epublib_core_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_4d_b4_min.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.picasa.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abuild.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amanifest.mf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anbproject/build-impl.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anbproject/genfiles.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anbproject/private/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anbproject/private/private.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anbproject/project.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anbproject/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/CommonWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/EPubToMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/HTMLDocumentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/ImageLoaderCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/JBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/JBookKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/MyHtmlEditorKit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/MyParserCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/PageStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/ParaStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/VBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/EPubToMusic/testToc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/code2music/MusicKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/code2music/MusicScale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/code2music/MusicalPhrase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/code2music/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/passwdcracktomusic/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/passwdcracktomusic/AlgorithmResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/passwdcracktomusic/MidiFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asrc/wms/passwdcracktomusic/PasswdCrackToMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/EPubToMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/HTMLDocumentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ImageLoaderCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/JBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/JBookKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/MyHtmlEditorKit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/MyParserCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/PageStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/VBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/WordOccurMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/WordStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/testToc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/code2music/MusicKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/code2music/MusicScale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/code2music/MusicalPhrase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/code2music/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/passwdcracktomusic/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/passwdcracktomusic/AlgorithmResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/passwdcracktomusic/MidiFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wms/passwdcracktomusic/PasswdCrackToMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data2Music.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Data2Music.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/CommonWords.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/EPubToMusic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/HTMLDocumentFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/ImageLoaderCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/JBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/JBookKey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/Librarian.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/MyHtmlEditorKit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/MyParserCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/PageStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/ParaStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/VBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/EPubToMusic/testToc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/code2music/MusicKey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/code2music/MusicScale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/code2music/MusicalPhrase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/code2music/Note.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/passwdcracktomusic/Algorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/passwdcracktomusic/AlgorithmResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/passwdcracktomusic/MidiFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wms/passwdcracktomusic/PasswdCrackToMusic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/WordOccurMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wms/EPubToMusic/WordOccurMatrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +25,19 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7d71e411-ab30-4091-af9c-81521592c91c" />
+        <option name="url" value="https://github.com/mstemen0010/Data2Music.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -210,6 +130,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "rel0a",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/mstem/OneDrive/Documents/GitHub/Data2Music",
     "project.structure.last.edited": "Project",
@@ -289,18 +210,13 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java</url>
-          <line>61</line>
+          <line>65</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java</url>
-          <line>57</line>
+          <line>61</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/EPubToMusic.java</url>
@@ -309,23 +225,23 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java</url>
-          <line>100</line>
+          <line>107</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/Librarian.java</url>
-          <line>125</line>
+          <line>129</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/ParaStack.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/EPubToMusic.java</url>
           <line>65</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/wms/EPubToMusic/Librarian.java</url>
+          <line>229</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -59,7 +59,11 @@ public class Librarian {
     
     private final String wordStackPathName = "C:\\dev\\\\lists\\";
     private final String commonWordsStackFile = "cwlist3.txt";
-    
+
+    private int currentChapter = -1;
+    private int  currentPage = -1;
+    private int currentParagraph = -1;
+
     private Librarian() {
         // singleton
         File f = new File(wordStackPathName +  commonWordsStackFile );
@@ -196,9 +200,18 @@ public class Librarian {
 
         clearPageList();
         int pageCounter = 0;
+        int paraCounter = 0;
         while ((entry = zis.getNextEntry()) != null) {
             if (entry.getName().toLowerCase().contains(".html")) {
                 System.out.println("Got html/chapter: " + entry.getName());
+                if( currentChapter == -1 ) {
+                    currentChapter = 1;
+                    currentPage = 1;
+                    paraCounter = 0;
+                }
+                else {
+                    currentChapter++;
+                }
                 String t = entry.toString();
                 //  pagesEntryMap.put(new Integer(pageCounter), entry.toString());
 
@@ -209,8 +222,13 @@ public class Librarian {
                 String nbi = explodeHtml(name, entry);
                 // System.out.println(sb.toString());
                 if (nbi != null) {
-                    ParaStack ps = new ParaStack(nbi, this);
-                    
+                    pageCounter++;
+                    paraCounter++;
+                    currentPage = pageCounter;
+
+                    ParaStack ps;
+                    ps = new ParaStack(currentChapter,currentPage,paraCounter,  nbi, this);
+
                     // pagesEntryMap.put(new Integer(pageCounter), nbi);
                     if( ps != null )
                         pageStack.put(pageCounter, ps);

@@ -23,16 +23,19 @@ public class ParaStack {
     // use a scanner to build pararaph stack 
     final String paraDelim = "</P>";
     private final Stack<String> paraStack = new Stack<>();
+
+    private WordOccurMatrix wordOccurMatrix;
     private final Set<String> wordSet = new HashSet<>();
-    private final TreeMap<String, Integer> wordsByCount = new TreeMap<>();
+   private final TreeMap<String, Integer> wordsByCount = new TreeMap<>();
     private final Stack<String> targetStack = new Stack<>();
     
     private final int targetValue = 8; // good values: 5,7,9, 10
     
     private final Librarian myLibrarian;
 
-    public ParaStack(String stringToParse, Librarian lib ) {
+    ParaStack(int chapter, int page, int paragraph, String stringToParse, Librarian lib ) {
         myLibrarian = lib;
+        wordOccurMatrix = new WordOccurMatrix( chapter, page, paragraph );
         build(stringToParse);
 
     }
@@ -41,9 +44,10 @@ public class ParaStack {
         // Element content = doc.getElementById("someid");
         Document doc = Jsoup.parse(strToUse);
         Elements p = doc.getElementsByTag("p");
-        System.out.println("Common words stack size is: " +  myLibrarian.getCommonWords().getCommonWordsSize());
-                
-        System.out.println("Target value is: " + targetValue );
+        for (String s1 : Arrays.asList("Common words stack size is: " + myLibrarian.getCommonWords().getCommonWordsSize(), "Target value is: " + targetValue)) {
+            System.out.println(s1);
+        }
+
         for (Element x : p) {
             // System.out.println(x.text());
             paraStack.push(x.text());
@@ -77,20 +81,23 @@ public class ParaStack {
         List<String> wordList;
         wordList = split(words);
         for( String s:wordList ) {
-            if( ! isCaptalized(s))
-                continue;
-            if (myLibrarian.isCommonWord(s.toLowerCase(Locale.ENGLISH))) {
-                continue;
-            }
-            boolean add = this.wordSet.add(s);
-            if (!this.wordsByCount.containsKey(s)) {
-                wordsByCount.put(s, 1);
-            } else {
-                int c = wordsByCount.get(s).intValue() + 1;
-                wordsByCount.put(s, c);
-                if (c == targetValue) {
-                    String t = s + "=" + c;
-                    this.targetStack.add(t);
+            if (s.length() > 1) {
+                if (isCaptalized(s)) {
+                    if (!myLibrarian.isCommonWord(s.toLowerCase(Locale.ENGLISH))) {
+                        boolean add = this.wordSet.add(s);
+                        this.wordOccurMatrix.addWordToMatrix(s);
+                        if (this.wordsByCount.containsKey(s)) {
+                            int c = wordsByCount.get(s).intValue() + 1;
+                            wordsByCount.put(s, c);
+                            if (c != targetValue) {
+                                continue;
+                            }
+                            String t = s + "=" + c;
+                            this.targetStack.add(t);
+                        } else {
+                            wordsByCount.put(s, 1);
+                        }
+                    }
                 }
             }
         }

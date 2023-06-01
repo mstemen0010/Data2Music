@@ -12,7 +12,7 @@ public class WordOccurMatrix implements Map<String, Integer> { PageStack assocPa
     
     HashMap<String, Integer> wordOccurMatrix;
     
-    public WordOccurMatrix( int chapter, int page, int paragraph) {
+    WordOccurMatrix( int chapter, int page, int paragraph) {
         this.chapter = chapter;
         this.page = page;
         this.paragraph = paragraph;
