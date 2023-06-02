@@ -5,19 +5,16 @@
  */
 package wms.EPubToMusic;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Path;
-import java.util.Iterator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import nl.siegmann.epublib.domain.Book;
 import wms.code2music.MusicalPhrase;
 import wms.code2music.Note;
 import wms.passwdcracktomusic.MidiFile;
+
+import java.io.*;
+import java.nio.file.Path;
+import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -68,7 +65,9 @@ public class EPubToMusic {
     public static void main(String[] args) {
            
         String pathName = "C:\\alt_dev\\\\ebooks\\";
-        String bookName = "TheKingInYellow.epub";
+
+        pathName = "/Users/matthewstemen/ebooks";
+        String bookName = "pg8492.epub";
         
         MusicalPhrase myPhrase = new MusicalPhrase(); 
         myPhrase.printStack();

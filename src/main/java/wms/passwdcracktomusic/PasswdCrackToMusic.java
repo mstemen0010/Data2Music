@@ -5,10 +5,11 @@
  */
 package wms.passwdcracktomusic;
 
-import java.util.Iterator;
 import wms.code2music.MusicScale;
 import wms.code2music.MusicalPhrase;
 import wms.code2music.Note;
+
+import java.util.Iterator;
 
 /**
  *
@@ -326,7 +327,7 @@ class BruteForce implements Algorithm {
 public class PasswdCrackToMusic {
 
     int octaveOffSet = 1;
-    static MusicScale<Note> scale = null;
+    public static MusicScale<Note> scale = null;
 
 
     public PasswdCrackToMusic()

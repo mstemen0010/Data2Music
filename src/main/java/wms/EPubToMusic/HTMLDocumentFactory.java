@@ -1,30 +1,20 @@
 package wms.EPubToMusic;
 
 
-
-import java.io.Reader;
-import java.io.StringReader;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-
-import javax.swing.text.EditorKit;
-import javax.swing.text.html.HTMLDocument;
-import javax.swing.text.html.HTMLEditorKit;
-import javax.swing.text.html.HTMLEditorKit.Parser;
-
-
 import nl.siegmann.epublib.browsersupport.NavigationEvent;
 import nl.siegmann.epublib.browsersupport.NavigationEventListener;
 import nl.siegmann.epublib.browsersupport.Navigator;
 import nl.siegmann.epublib.domain.Book;
 import nl.siegmann.epublib.domain.Resource;
-import nl.siegmann.epublib.service.MediatypeService;
-
-import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.swing.text.EditorKit;
+import javax.swing.text.html.HTMLDocument;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * Creates swing HTML documents from resources.
@@ -139,15 +129,6 @@ public class HTMLDocumentFactory implements NavigationEventListener {
 		}
 		return result.toString();
 	}
-
-	/**
-	 * Creates a swing HTMLDocument from the given resource.
-	 * 
-	 * If the resources is not of type XHTML then null is returned.
-	 * 
-	 * @param resource
-	 * @return
-	 */
 	
 	
 	private void initDocumentCache(Book book) {

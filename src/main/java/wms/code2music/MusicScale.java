@@ -6,7 +6,10 @@ import wms.passwdcracktomusic.PasswdCrackToMusic;
 import java.util.Random;
 import java.util.Stack;
 
+import static wms.passwdcracktomusic.PasswdCrackToMusic.scale;
+
 public class MusicScale<Note> extends Stack<Note> {
+    int octaveOffSet = 1;
     public Note getRandomNoteInScale()
     {
         Note noteToRet = null;
@@ -39,7 +42,7 @@ public class MusicScale<Note> extends Stack<Note> {
         // System.out.println("Relative pos is: " + relativeNotePos );
         // System.out.println("Mod value is: " + relativeNotePos);
         wms.code2music.Note noteToSend = scale.elementAt(relativeNotePos);
-        noteToSend.setOctave(relativeOctave + this.octaveOffSet );
+        noteToSend.setOctave(relativeOctave + octaveOffSet );
         retVal = noteToSend.getValue() + ":" + noteToSend.getOctave() + "~";
 
         //  C E G♯and E♭ G B

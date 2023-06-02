@@ -1,8 +1,17 @@
 package wms.EPubToMusic;
 
 
+import nl.siegmann.epublib.browsersupport.Navigator;
+import nl.siegmann.epublib.domain.Book;
+import nl.siegmann.epublib.domain.Resource;
+import nl.siegmann.epublib.util.CollectionUtil;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.awt.Image;
+import javax.imageio.ImageIO;
+import javax.swing.text.html.HTMLDocument;
+import java.awt.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -10,19 +19,6 @@ import java.util.Dictionary;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.imageio.ImageIO;
-import javax.swing.text.html.HTMLDocument;
-
-import nl.siegmann.epublib.browsersupport.Navigator;
-import nl.siegmann.epublib.domain.Book;
-import nl.siegmann.epublib.domain.Resource;
-import nl.siegmann.epublib.util.CollectionUtil;
-import nl.siegmann.epublib.util.StringUtil;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This class is a trick to get the JEditorKit to load its images from the epub file instead of from the given url.
