@@ -5,14 +5,15 @@
  */
 package wms.EPubToMusic;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  *
@@ -78,25 +79,28 @@ public class ParaStack {
     }
 
     public void updateWordStack(String words) {
+        String letters = this.useOnlyAlpas(words);
+        words = letters;
         List<String> wordList;
         wordList = split(words);
-        for( String s:wordList ) {
-            if (s.length() > 1) {
-                if (isCaptalized(s)) {
-                    if (!myLibrarian.isCommonWord(s.toLowerCase(Locale.ENGLISH))) {
-                        boolean add = this.wordSet.add(s);
-                        this.wordOccurMatrix.addWordToMatrix(s);
-                        if (this.wordsByCount.containsKey(s)) {
-                            int c = wordsByCount.get(s).intValue() + 1;
-                            wordsByCount.put(s, c);
-                            if (c != targetValue) {
-                                continue;
-                            }
-                            String t = s + "=" + c;
-                            this.targetStack.add(t);
-                        } else {
-                            wordsByCount.put(s, 1);
+        for (String s : wordList) {
+            if (s.length() <= 1) {
+                continue;
+            }
+            if (isCaptalized(s)) {
+                if (!myLibrarian.isCommonWord(s.toLowerCase(Locale.ENGLISH))) {
+                    boolean add = this.wordSet.add(s);
+                    this.wordOccurMatrix.addWordToMatrix(s);
+                    if (this.wordsByCount.containsKey(s)) {
+                        int c = wordsByCount.get(s).intValue() + 1;
+                        wordsByCount.put(s, c);
+                        if (c != targetValue) {
+                            continue;
                         }
+                        String t = s + "=" + c;
+                        this.targetStack.add(t);
+                    } else {
+                        wordsByCount.put(s, 1);
                     }
                 }
             }
@@ -130,17 +134,28 @@ public class ParaStack {
             .map(elem -> elem)
             .collect(Collectors.toList());
     }
-    
+
     private Stack<String> candidateStackFromTargetStack() {
         Stack<String> candStack = new Stack<>();
-        for (String s: targetStack) {            
-            String cs = s.split("=")[0];            
+        for (String s : targetStack) {
+            String cs = s.split("=")[0];
             candStack.add(cs.replaceAll("\"", ""));
         }
-        
+
         return candStack;
     }
-    
-   
+
+    private String useOnlyAlpas(String dirtyString) {
+        StringBuilder cleanString = new StringBuilder();
+
+        char[] chars = dirtyString.toCharArray();
+        for (char c : chars) {
+            if (Character.isLetter(c) || Character.isSpaceChar(c)) {
+                cleanString.append(c);
+            }
+        }
+        return cleanString.toString();
+    }
+
 
 }
