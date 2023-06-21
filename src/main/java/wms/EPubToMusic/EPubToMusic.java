@@ -6,20 +6,17 @@
  */
 package wms.EPubToMusic;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Path;
-import java.util.Iterator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import nl.siegmann.epublib.domain.Book;
 import wms.code2music.MusicScale;
 import wms.code2music.MusicalPhrase;
 import wms.code2music.Note;
 import wms.passwdcracktomusic.MidiFile;
+
+import java.io.*;
+import java.nio.file.Path;
+import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -29,7 +26,7 @@ public class EPubToMusic {
 
     static MusicScale scale = null;
     // FileInputStream fs = null;
-    private final String libraryPathName = "C:\\dev\\\\ebooks\\";
+    private final String libraryPathName = "C:\\alt_dev\\\\ebooks\\";
     private final String bookName = "TheKingInYellow.epub";
     private Path currentPath;
     private File ebookFile;
@@ -84,7 +81,10 @@ public class EPubToMusic {
         String pathName = "C:\\dev\\ebooks\\";
         String bookName = "TheKingInYellow.epub";
 
-        MusicalPhrase myPhrase = new MusicalPhrase();
+        pathName = "/Users/matthewstemen/ebooks";
+        bookName = "pg8492.epub";
+        
+        MusicalPhrase myPhrase = new MusicalPhrase(); 
         myPhrase.printStack();
         System.out.println("Musical Phrase contains: " + myPhrase.size() + " notes");
         MidiFile newMidiFile = new MidiFile();
