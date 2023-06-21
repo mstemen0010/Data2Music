@@ -30,7 +30,7 @@ public class ParaStack {
    private final TreeMap<String, Integer> wordsByCount = new TreeMap<>();
     private final Stack<String> targetStack = new Stack<>();
     
-    private final int targetValue = 8; // good values: 5,7,9, 10
+    private final int targetValue = 10; // good values: 5,7,9, 10
     
     private final Librarian myLibrarian;
 
